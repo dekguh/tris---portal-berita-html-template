@@ -1,0 +1,28 @@
+%title-default-style {
+    padding-bottom: 15px;
+    border-bottom: 2px solid $color-gray-primary;
+    margin-bottom: 15px;
+
+    .title {
+        margin-bottom: 0;
+    }
+}
+
+.title-block-slider {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    @extend %title-default-style;
+
+    .title {
+        flex: 1 1 auto;
+    }
+
+    .title-button-slider {
+        flex: 0 1 auto;
+    }
+}
+
+.title-block {
+    @extend %title-default-style;
+}

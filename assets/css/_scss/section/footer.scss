@@ -1,0 +1,46 @@
+.footer-content {
+    .form-icon {
+        margin-bottom: 0;
+    }
+
+    &.style-1 {
+        background-color: $color-black-primary;
+
+        .footer-content-detail {
+            padding: 30px 0;
+            border-bottom: 1px solid $color-white;
+        }
+
+        .copyright {
+            color: $color-gray-secondary;
+            font-size: 14px;
+        }
+    }
+
+    &.style-2 {
+        background-color: transparent;
+
+        .footer-content-detail {
+            padding: 30px 0;
+            border-top: 1px solid $color-gray-primary;
+            border-bottom: 1px solid $color-gray-primary;
+        }
+
+        .copyright {
+            color: $color-gray-primary;
+            font-size: 14px;
+        }
+    }
+}
+
+.footer-copyright {
+    padding: 15px 0;
+}
+
+@media (max-width: 767.98px) {
+    .footer-content {
+        .form-icon {
+            margin-bottom: 15px;
+        }
+    }
+}

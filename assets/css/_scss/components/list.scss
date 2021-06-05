@@ -1,0 +1,130 @@
+.list-contact {
+    @include reset-list-style;
+
+    .item {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .title {
+        margin-bottom: 4px;
+    }
+}
+
+.list-social-media {
+    @include reset-list-style;
+
+    .item {
+        display: inline-block;
+        margin-right: 8px;
+        position: relative;
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &.style-1 {
+        .item {
+            border: 1px solid $color-white;
+        }
+
+        .icon {
+            color: $color-white;
+        }
+    }
+
+    &.style-2 {
+        .item {
+            border: 1px solid $color-black-primary;
+        }
+
+        .icon {
+            color: $color-black-primary;
+        }
+    }
+}
+
+.list-quick-link {
+    @include reset-list-style;
+
+    .item {
+        display: inline-block;
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &.style-1 {
+        a {
+            color: $color-white;
+
+            &:hover {
+                color: $color-gray-secondary;
+            }
+        }
+    }
+
+    &.style-2 {
+        a {
+            color: $color-black-primary;
+
+            &:hover {
+                color: $color-black-primary;
+            }
+        }
+    }
+}
+
+.list-tags {
+    @include reset-list-style;
+
+    .item {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+        a {
+            padding: 4px 8px;
+            color: $color-black-secondary;
+            background-color: $color-gray-secondary;
+        }
+    }
+}
+
+.list-share-social-media {
+    @include reset-list-style;
+
+    .item {
+        display: inline-block;
+        margin-right: 8px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .icon {
+        margin-right: 4px;
+    }
+}

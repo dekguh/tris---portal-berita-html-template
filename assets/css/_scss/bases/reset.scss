@@ -1,0 +1,70 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-roboto;
+    font-size: 16px;
+    color: $color-black-secondary;
+    line-height: $lineheight-body;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: $lineheight-body;
+}
+
+h1 {
+    @extend %heading-setting;
+    font-size: $size-h1;
+}
+
+h2 {
+    @extend %heading-setting;
+    font-size: $size-h2;
+}
+
+h3 {
+    @extend %heading-setting;
+    font-size: $size-h3;
+}
+
+h4 {
+    @extend %heading-setting;
+    font-size: $size-h4;
+}
+
+h5 {
+    @extend %heading-setting;
+    font-size: $size-h5;
+}
+
+h6 {
+    @extend %heading-setting;
+    font-size: $size-h6;
+}
+
+a {
+    color: $color-blue-primary;
+    text-decoration: none;
+    transition: .5s;
+
+    &:hover {
+        color: $color-blue-secondary;
+        text-decoration: none;
+    }
+}
+
+input {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+button {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}

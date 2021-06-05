@@ -1,0 +1,20 @@
+.label {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    color: $color-white;
+
+    &:hover {
+        color: $color-white;
+    }
+
+    &.danger {
+        background-color: $color-red-primary;
+        border-color: $color-red-primary;
+    }
+
+    &.info {
+        background-color: $color-blue-primary;
+        border-color: $color-blue-primary;
+    }
+}

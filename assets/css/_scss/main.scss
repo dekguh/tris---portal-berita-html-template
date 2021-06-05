@@ -1,0 +1,62 @@
+/*
+Theme Name: Tris
+Theme URI: https://dekdekstudio.com
+Author: I Kadek Teguh Mahesa
+Author URI: https://dekdekstudio.com
+Description: modern blog & magazine themes
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tris
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*------------------------ table of content ------------------------
+1.0 font
+2.0 reset
+3.0 global
+4.0 preloader
+5.0 navbar
+6.0 header
+7.0 news
+8.0 single-post
+9.0 page
+10.0 footer
+11.0 widget
+12.0 search
+-------------------------------------------------------------------*/
+@import 'bases/color';
+@import 'bases/size';
+/*---------------------------- 1.0 Font ---------------------------*/
+@import 'bases/typography';
+/*---------------------------- 2.0 Reset --------------------------*/
+@import 'abstracts/mixin';
+@import 'abstracts/extends';
+@import 'bases/reset';
+/*---------------------------- 3.0 Global -------------------------*/
+@import 'bases/global';
+@import 'bases/spacing';
+/*-------------------------- 4.0 Preloader ------------------------*/
+@import 'components/preloader';
+/*---------------------------- 5.0 Navbar -------------------------*/
+@import 'components/navbar-base';
+@import 'components/navbar-1';
+@import 'components/navbar-2';
+@import 'components/navbar-3';
+/*---------------------------- 6.0 Header -------------------------*/
+@import 'section/header';
+/*---------------------------- 7.0 News ---------------------------*/
+@import 'section/news';
+/*------------------------- 8.0 single post -----------------------*/
+@import 'section/single-post';
+/*---------------------------- 9.0 Page ---------------------------*/
+@import 'section/page';
+/*--------------------------- 10.0 Footer -------------------------*/
+@import 'section/footer';
+/*--------------------------- 11.0 widget -------------------------*/
+@import 'components/widget';
+/*--------------------------- 12.0 Footer -------------------------*/
+@import 'section/search';

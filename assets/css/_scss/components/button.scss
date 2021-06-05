@@ -1,0 +1,266 @@
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 11px 25px;
+    background-color: transparent;
+    color: $color-white;
+    transition: .5s;
+
+    &.button-primary {
+        background-color: $color-black-primary;
+        border-color: $color-black-primary;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-black-primary;
+        }
+    }
+
+    &.button-primary-outline {
+        background-color: transparent;
+        border-color: $color-black-primary;
+        color: $color-black-primary;
+
+        &:hover {
+            background-color: $color-black-primary;
+            color: $color-white;
+        }
+    }
+}
+
+.button-link {
+    display: inline-block;
+    color: $color-black-primary;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color-black-primary;
+    line-height: 1;
+
+    &:hover {
+        color: $color-black-secondary;
+        border-bottom-color: $color-black-secondary;
+    }
+}
+
+.button-search {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: $color-black-secondary;
+    transition: .5s;
+
+    &:hover {
+        color: $color-black-primary;
+    }
+}
+
+.button-menu-hamburger {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: $color-black-primary;
+    border: 1px solid $color-black-primary;
+    transition: .5s;
+
+    %bar-menu {
+        position: absolute;
+        right: 5px;
+        height: 3px;
+        background-color: $color-white;
+        transition: 1s;
+    }
+
+    .bar-1 {
+        @extend %bar-menu;
+        top: 8px;
+        width: 24px;
+    }
+
+    .bar-2 {
+        @extend %bar-menu;
+        top: 13px;
+        width: 20px;
+    }
+
+    .bar-3 {
+        @extend %bar-menu;
+        top: 18px;
+        width: 15px;
+    }
+
+    .bar-4 {
+        @extend %bar-menu;
+        top: 23px;
+        width: 22px;
+    }
+
+    &:hover {
+        background-color: $color-white;
+
+        .bar-1 {
+            background-color: $color-black-primary;
+            width: 20px;
+        }
+
+        .bar-2 {
+            background-color: $color-black-primary;
+            width: 24px;
+        }
+
+        .bar-3 {
+            background-color: $color-black-primary;
+            width: 22px;
+        }
+
+        .bar-4 {
+            background-color: $color-black-primary;
+            width: 15px;
+        }
+    }
+}
+
+.button-menu-hamburger-2 {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    transition: .5s;
+
+    %bar-menu {
+        position: absolute;
+        right: 5px;
+        height: 3px;
+        background-color: $color-white;
+        transition: 1s;
+    }
+
+    .bar-1 {
+        @extend %bar-menu;
+        top: 8px;
+        width: 24px;
+    }
+
+    .bar-2 {
+        @extend %bar-menu;
+        top: 13px;
+        width: 20px;
+    }
+
+    .bar-3 {
+        @extend %bar-menu;
+        top: 18px;
+        width: 15px;
+    }
+
+    .bar-4 {
+        @extend %bar-menu;
+        top: 23px;
+        width: 22px;
+    }
+
+    &:hover {
+        border-color: $color-gray-secondary;
+
+        .bar-1 {
+            background-color: $color-gray-secondary;
+            width: 20px;
+        }
+
+        .bar-2 {
+            background-color: $color-gray-secondary;
+            width: 24px;
+        }
+
+        .bar-3 {
+            background-color: $color-gray-secondary;
+            width: 22px;
+        }
+
+        .bar-4 {
+            background-color: $color-gray-secondary;
+            width: 15px;
+        }
+    }
+}
+
+.button-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    color: $color-white;
+    transition: .5s;
+
+    &:hover {
+        color: $color-gray-primary;
+    }
+
+    &.black {
+        color: $color-black-secondary;
+
+        &:hover {
+            color: $color-black-primary;
+        }
+    }
+}
+
+.button-close-search {
+    margin-top: 15px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $color-white;
+    font-size: 16px;
+    transition: .5s;
+
+    &:hover {
+        color: $color-gray-secondary;
+    }
+}
+
+.button-sidebar-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    color: $color-red-primary;
+    transition: .5s;
+
+    &:hover {
+        color: $color-red-secondary;
+    }
+}
+
+.button-play {
+    color: $color-white;
+    font-size: 60px;
+
+    &:hover {
+        color: $color-gray-secondary;
+    }
+}
+
+.share-facebook {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: $color-blue-optional;
+    color: $color-white;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.share-twitter {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: $color-blue-primary;
+    color: $color-white;
+
+    &:hover {
+        color: $color-white;
+    }
+}
